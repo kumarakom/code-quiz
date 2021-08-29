@@ -36,7 +36,7 @@ var questionPosition = 0;
 
 // Declared variables
 var currentTime = document.querySelector("#currentTime");
-var timer = document.querySelector("#startTime");
+var timer = document.querySelector("#startTimer");
 var questionsDiv = document.querySelector("#questionsDiv");
 var main = document.querySelector("#main");
 
