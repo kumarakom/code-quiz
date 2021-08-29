@@ -36,7 +36,7 @@ var questionPosition = 0;
 
 // Declared variables
 var currentTime = document.querySelector("#currentTime");
-var timer = document.querySelector("#startTimer");
+var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
 var main = document.querySelector("#main");
 
@@ -55,7 +55,7 @@ var ulCreate = document.createElement("ul");
 // Triggers timer on button, shows user a display on the screen
 // From : https://developer.mozilla.org/en-US/docs/Web/API/Element/click_event
 timer.addEventListener("click", function () {
-    // We are checking zero because its originally set to zero and has to be the same type
+    // We are checking zero because its originally set to zero
     if (tempSeconds === 0) {
         tempSeconds = setInterval(function () {
             secondsRemaining--;
@@ -153,27 +153,29 @@ function allDone() {
     }
 
     // Label
+    // Stated by example from: 
+    // https://www.codegrepper.com/code-examples/javascript/dynamically+set+label+attribute+javascript
     var createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
     createLabel.textContent = "Enter your initials: ";
-
-    questionsDiv.appendChild(createLabel);
+        // Now append 
+        questionsDiv.appendChild(createLabel);
 
     // input
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
     createInput.setAttribute("id", "initials");
     createInput.textContent = "";
-
-    questionsDiv.appendChild(createInput);
+        // Now append 
+        questionsDiv.appendChild(createInput);
 
     // submit
     var createSubmit = document.createElement("button");
     createSubmit.setAttribute("type", "submit");
     createSubmit.setAttribute("id", "Submit");
     createSubmit.textContent = "Submit";
-
-    questionsDiv.appendChild(createSubmit);
+        // Now append 
+        questionsDiv.appendChild(createSubmit);
 
 
     // Use local storage to capture initial and score 
@@ -199,7 +201,8 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-  
+            // Go to highscores page 
+            window.location.replace("./highscores.html");
         }
     });
 
