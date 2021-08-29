@@ -4,8 +4,8 @@ This is a quiz application using HTML, CSS, and Javascript. This is project home
 
 This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link. Or, download the sources files to use this as a template.
 
+* [Deployment link page](https://kumarakom.github.io/code-quiz/)
 * [GitHub Repository](https://github.com/kumarakom/code-quiz)
-* [Deployed GitHub IO](https://kumarakom.github.io/code-quiz/)
 
 ## Table of Contents
 Below are steps I had to follow to setup this project

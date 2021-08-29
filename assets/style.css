@@ -27,7 +27,17 @@
 #currentTime {
     float: right;
 }
+button {
+    border-radius: 8px;
+    font-size: 20px;
+}
 
+textarea {
+    width: 90%;
+    margin: 20px;
+}
+
+/* Override for goBack button */
 #goBack {
     background-color: purple;
     position: relative;
@@ -39,17 +49,8 @@
     text-decoration: none;
     color: white;
 }
-button {
-    border-radius: 8px;
-    font-size: 20px;
-}
 
-textarea {
-    width: 90%;
-    margin: 20px;
-}
-
-/* Define for clear button */
+/* Override for clear button */
 #clear {
     background-color: purple;
     position: relative;
@@ -60,9 +61,10 @@ textarea {
     color: white;
 }
 
+/* Override for Submit button */
 #Submit {
     background-color: purple;
-    margin-left: 33%;
+    margin-left: 35%;
     padding: 15px 32px;
     color: white;
 }

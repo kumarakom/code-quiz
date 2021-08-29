@@ -1,3 +1,8 @@
+
+// Declared variables
+var score = 0;
+var questionPosition = 0;
+
 // Var array  with questions and answers 
 var questions = [
     {
@@ -28,13 +33,8 @@ var questions = [
     },
 
 ];
-// Declared variables
-var score = 0;
-var questionPosition = 0;
 
 // Start of code 
-
-// Declared variables
 var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTimer");
 var questionsDiv = document.querySelector("#questionsDiv");
@@ -103,11 +103,15 @@ function compareAnswer(event) {
         // Correct condition 
         if (element.textContent == questions[questionPosition].answer) {
             score++;
-            createDiv.textContent = "Correct! The answer is:  " + questions[questionPosition].answer;
+            createDiv.textContent = "Correct!"
+            // Or you can publish details 
+            // "Correct! The answer is:  " + questions[questionPosition].answer;
         } else {
             // Will deduct -10 seconds off secondsRemaining for wrong answers
             secondsRemaining = secondsRemaining - penalty;
-            createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionPosition].answer;
+            createDiv.textContent = "Wrong!"
+            // Or you can publish details 
+            // "Wrong! The correct answer is:  " + questions[questionPosition].answer;
         }
 
     }
@@ -137,23 +141,23 @@ function allDone() {
     questionsDiv.appendChild(createH1);
 
     // Paragraph
-    var createP = document.createElement("p");
-    createP.setAttribute("id", "createP");
+    var createPtag1 = document.createElement("p");
+    createPtag1.setAttribute("id", "createPtag1");
 
-    questionsDiv.appendChild(createP);
+    questionsDiv.appendChild(createPtag1);
 
     // Calculates seconds remaining and replaces it with score
     if (secondsRemaining >= 0) {
         var timeRemaining = secondsRemaining;
-        var createP2 = document.createElement("p");
+        var createPtag2 = document.createElement("p");
         clearInterval(tempSeconds);
-        createP.textContent = "Your final score is: " + timeRemaining;
+        createPtag1.textContent = "Your final score is: " + timeRemaining;
 
-        questionsDiv.appendChild(createP2);
+        questionsDiv.appendChild(createPtag2);
     }
 
     // Label
-    // Stated by example from: 
+    // The site below helps understand attributes example 
     // https://www.codegrepper.com/code-examples/javascript/dynamically+set+label+attribute+javascript
     var createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
