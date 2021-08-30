@@ -28,11 +28,14 @@ The initial source was a file repostiory containg the a folder with html page, c
 * An alternate document to clone a repo can also be found at [github](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)
 
 ## Execution
-* git clone repository locally 
-* change directory to `code-quiz` folder
-* you will see a file "index.html"
-* establish your current working dirctory or your preset working directory
-* open file the "index.html" (using the path determined above) with any browser using 
+* you can excute it using the [live link](https://kumarakom.github.io/code-quiz/) or 
+* to save a local copy 
+  * git clone repository locally 
+  * change directory to `code-quiz` folder
+  * you will see a file "index.html"
+  * establish your current working dirctory or your preset working directory
+  * open file the "index.html" (using the path determined above) with any browser using 
+
 
 ### Usage 
 * HTML and CSS and Javascript documents create a quiz with multiple choice questions with Javascript trivia
@@ -51,11 +54,12 @@ The initial source was a file repostiory containg the a folder with html page, c
 ![](assets/images/firstimagewithtimer.jpg)
    * Image 2 : shows when a correct choice made
 ![](assets/images/secondimagecorrectanswer.jpg) 
-   * Image 3 : shows when a wrong choice made 
+   * Image 3 : shows when a wrong choice made
 ![](assets/images/thirdimagewronganswer.jpg)
+   * Wrong answers are penalized with, subtracting 10 seconds from second remaining 
 
 * HTML appended page that features:
-    * Final score based on calculated time remaining
+    * Final score based on calculated seconds remaining
     * A Summary of how many questions answered correctly
     * Input area to record initials
     * A Submit button which save to local storage 
@@ -67,10 +71,7 @@ The initial source was a file repostiory containg the a folder with html page, c
     * Go back button calls the main page 
 ![](assets/images/displyhighscores.jpg)
 
-
-
 ## Credits
-
 Key areas that helped me with Javascript were:
 
 - Classroom examples and notes 
@@ -79,7 +80,6 @@ Key areas that helped me with Javascript were:
 - [Json stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
 
 ## License
-
 This page is provided as is and the design and question sample belongs to
 ```
 © 2021 Trilogy Education Services,
